@@ -1,5 +1,5 @@
 # Build settings
-permalink   : /blog/:year/:title/
+permalink   : /blog/:title/
 highlighter : rouge
 paginate: 5
 paginate_path: "/blog/page/:num/"
@@ -14,7 +14,7 @@ sass:
 
 # SEO settings
 title: مهدی مشتاقی
-description: "مهدی مشتاقی هستم، توسعه دهنده وب"
+description: "مهدی مشتاقی هستم، توسعه دهنده رابط کاربری وب"
 keywords: "مهدی مشتاقی, مشتاقی, طراحی وب، روزمره"
 url: http://moshtaghi.ir
 google_analytics: UA-9152888-2
@@ -25,8 +25,8 @@ disqus_site_shortname: "moshtaghi"
 # Author settings
 author:
   name      : مهدی مشتاقی
-  job       : توسعه دهنده FrondEnd
-  bio       : "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون"
+  job       : توسعه دهنده رابط کاربری
+  bio       : "در این سایت در مورد هر چیزی می‌نویسم، بیشتر مسائل تخصصی و روبرویی با چالش‌های اون."
   thumb     : /images/author.jpg
   email     : moshtaghi.m@gmail.com
   url       : http://moshtaghi.ir
