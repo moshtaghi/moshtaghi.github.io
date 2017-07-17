@@ -1,43 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
 # Build settings
+permalink   : /blog/:year/:title/
+highlighter : rouge
+paginate: 5
+paginate_path: "/blog/page/:num/"
+comments: true
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
+  - jekyll-paginate
+sass:
+  sass_dir: _scss
+  style: compressed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# SEO settings
+title: مهدی مشتاقی
+description: "مهدی مشتاقی هستم، توسعه دهنده وب"
+keywords: "مهدی مشتاقی, مشتاقی, طراحی وب، روزمره"
+url: http://moshtaghi.ir
+google_analytics: UA-9152888-2
+repo: https://github.com/moshtaghi/moshtaghi.github.io/tree/source
+disqus_shortname: "moshtaghi"
+disqus_site_shortname: "moshtaghi"
+
+# Author settings
+author:
+  name      : مهدی مشتاقی
+  job       : توسعه دهنده FrondEnd
+  bio       : "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون"
+  thumb     : /images/author.jpg
+  email     : moshtaghi.m@gmail.com
+  url       : http://moshtaghi.ir
+  github    : https://github.com/moshtaghi
+  twitter   : https://twitter.com/moshtaghi
+  linkedin  : https://linkedin.com/in/moshtaghim
+  telegram  : https://t.me/moshtaghim
+
+# navbar pages
+navbar:
+  - slug: about
+    title: درباره
+  - slug: blog
+    title: وبلاگ
