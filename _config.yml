@@ -14,7 +14,7 @@ sass:
 
 # SEO settings
 title: مهدی مشتاقی
-description: "مهدی مشتاقی هستم، توسعه دهنده رابط کاربری وب"
+description: "مهدی مشتاقی هستم، توسعه دهنده وب (رابط کاربری وب)"
 keywords: "مهدی مشتاقی, مشتاقی, طراحی وب، روزمره"
 url: http://moshtaghi.ir
 google_analytics: UA-9152888-2
@@ -25,8 +25,8 @@ disqus_site_shortname: "moshtaghi"
 # Author settings
 author:
   name      : مهدی مشتاقی
-  job       : توسعه دهنده رابط کاربری
-  bio       : "در این سایت در مورد هر چیزی می‌نویسم، بیشتر مسائل تخصصی و روبرویی با چالش‌های اون."
+  job       : توسعه دهنده وب (رابط کاربری وب)
+  bio       : "در این سایت در مورد هر چیزی می‌نویسم، طبیعی است که بیشتر با موضوعات تخصصی."
   thumb     : /images/author.jpg
   email     : moshtaghi.m@gmail.com
   url       : http://moshtaghi.ir
