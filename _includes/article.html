@@ -4,7 +4,7 @@
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h1>
     <div class="post-meta">
-      <time>{{ post.date | jdate : "%A %d %b %Y" }}</time>
+      <time>{{ post.date | date : "%A %d %b %Y" }}</time>
     </div>
   </header>
 
