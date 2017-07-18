@@ -4,9 +4,12 @@
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h1>
     <div class="post-meta">
-      <time>{{ post.date | date : "%A %d %b %Y" }}</time>
+      <time>{{ post.date | date : "%A %d %b %Y" }}</time> <br>
     </div>
   </header>
 
-  <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">{{ post.content | strip_html | truncatewords: 30 }}</a></p>
+  <p><a href="{{ post.url | prepend: site.baseurl }}" title="لینک ثابت به: {{ post.title }}" class="read-more">{{ post.content | strip_html | truncatewords: 30 }}</a></p>
+  {% for tag in post.tags %}
+  <a class="tag-link" href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
 </article>

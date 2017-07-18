@@ -8,6 +8,7 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-archives
 sass:
   sass_dir: _scss
   style: compressed
@@ -41,4 +42,11 @@ navbar:
     title: درباره
   - slug: blog
     title: وبلاگ
+# archive configuration
+jekyll-archives:
+  enabled:
+  - tags
+  layout: 'archive'
+  permalinks:
+    tag: '/blog/tag/:name/'
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

@@ -244,6 +244,24 @@ body.home {
 
 .post {
   padding: $base-spacing 0;
+  .tag-link {
+    unicode-bidi: embed;
+    display : inline-block;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    background-color: $blue-color;
+    color: $white-color !important;
+    padding: 5px;
+    border: solid 1px $blue-color;
+    border-radius: 3px;
+  }
+  .tag-link:hover, .tag-link:active {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  .tag-link:before {
+    content: "#";
+  }
 }
 
 .post-header {
