@@ -1,6 +1,7 @@
 .highlight {
   @extend %clearfix;
   padding: 0;
+  direction: ltr;
   margin: {
     top: 1.2em;
     bottom: 1.2em;
@@ -9,6 +10,7 @@
   &, .hll, pre, code {
     background-color: #272822 !important;
     border: none;
+    color: #fff;
   }
 
   pre {
