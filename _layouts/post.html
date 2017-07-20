@@ -12,7 +12,11 @@ layout: default
 
     <div class="post-content">
       {{ content }}
+      {% for tag in page.tags %}
+        <a class="tag-link" href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
     </div>
+    
 
     {% include comments.html %}
   </div>
