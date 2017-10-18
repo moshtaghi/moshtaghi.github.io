@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "حل اساسی مشکل CORS در Apache"
-date:   2017-07-20 12:10:29 +0430
+date:   2017-10-18 13:49:00 +0430
 comments: true
 tags:
     - apache
