@@ -28,7 +28,7 @@ tags:
 
 مرحله ۲) حالا باید برای پروژه یک theme تعریف کنیم و `direction: rtl` رو در اون اعمال کنیم. برای اینکار فایل `src/layouts/Dashboard/Dashboard.jsx` رو باز و این کد‌ها رو به جاهایی که باید اضافه می‌کنیم.
 
-```Jsx
+```jsx
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 ```
 
@@ -66,7 +66,7 @@ yarn add jss-rtl
 
 اول import کردن چیزایی که لازمه برای اینکار
 
-```Jsx
+```jsx
 import { create } from 'jss';
 import rtl from 'jss-rtl';
 import JssProvider from 'react-jss/lib/JssProvider';
@@ -105,7 +105,7 @@ return (
 
 پس فایل استایلی که مربوط به کامپوننت مادر (`src/assets/jss/material-dashboard-react/appStyle.jsx`) باشه رو باز می‌کنیم و ...
 
-```Jsx
+```jsx
 const appStyle = theme => ({
   wrapper: {
     direction: "rtl",
