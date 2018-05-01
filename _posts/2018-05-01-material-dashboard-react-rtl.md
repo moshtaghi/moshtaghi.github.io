@@ -46,7 +46,7 @@ const theme = createMuiTheme({
 
 ```jsx
 return (
-	<MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={theme}>
 	...
 	</MuiThemeProvider>
 );
@@ -58,7 +58,7 @@ return (
 
 مرحله ۳) خودشون گفتن از پلاگین jss-rtl استفاده کنیم. پس اول بصورت dependency نصبش می‌کنیم
 
-```Bash
+```bash
 yarn add jss-rtl
 ```
 
