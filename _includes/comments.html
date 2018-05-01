@@ -1,24 +1,34 @@
 {% if page.comments %}
 <hr>
-
 <aside id="comments" class="disqus">
   <div class="container">
     <h3><i class="icon icon-comments-o"></i> دیدگاه‌ها</h3>
     <div id="disqus_thread"></div>
-    <script>
-      var disqus_config = function() {
-        this.page.url = '{{ site.url }}{{ post.url }}{{ page.id }}';
-        this.page.identifier = '{{ page.id }}';
-      };
-      (function() {
-        var d = document,
-        s = d.createElement('script');
-        s.src = '//{{ site.disqus_site_shortname }}.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
+    <script async defer src='//{{ site.disqus_shortname }}.disqus.com/embed.js' onerror="disqusHandler();"></script>
+    <script type="text/javascript">
+      var disqusHandler = (function (w) {
+        var methods = w.pr.methods;
+        function addDisqusErrorIfNotPresent() {
+          var comments = methods.selectElementByClassName('#disqus');
+          /* Add only for the 1st time */
+          if (!methods.selectElementById('comment__error')) {
+            /* Add error to .disqus */
+            comments.appendChild(createDisqusError());
+            /* Parse any emoji inside error */
+            methods.parseTextForEmojis(document.getElementById('comment__error'));
+          }
+        }
+        function createDisqusError() {
+          var err = document.createElement('div');
+          err.id = 'comment__error';
+          window.pr.methods.addClass('alert', err);
+          err.innerHTML = 'اگر این پیام رو میبینین، به این معنیه که اسکریپت Disqus براتون لود نشده. سرویس Disqus توی ایران فیلتر شده!! <strong>لطفا وی پی ان تون رو روشن کنین و صفحه فعلی رو ریفرش کنین.</strong>';
+          return err;
+        }
+        return addDisqusErrorIfNotPresent;
+      })(window);
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </aside>
 {% endif %}
