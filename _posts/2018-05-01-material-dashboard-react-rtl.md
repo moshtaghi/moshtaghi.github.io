@@ -14,7 +14,7 @@ tags:
 
 در حال مطالعه و تست کامپوننت‌های مختلفش بودم که رسیدم به این پروژه! پروژه رو ستاپ کردم و اولین مشکل، عدم پشتیبانی از RTL بود و البته فونت مناسب برای زبان فارسی. از اونجایی که خود material-ui به خوبی از RTL پشتیبانی می‌کرد، با توجه به [مستندات خودش](https://material-ui-next.com/guides/right-to-left/)  ، تغییراتی در [پروژه‌ی اصلی](https://github.com/creativetimofficial/material-dashboard-react) دادم و کل داشبور رو RTL کردم و [فونت زیبای وزیر](https://github.com/rastikerdar/vazir-font) که کار آقای راستیکردار بود هم بهش اضافه کردم. شما می‌تونید [پروژه رو از این آدرس ببینید](https://github.com/moshtaghi/material-dashboard-react-rtl) و اگر دوست داشتید استفاده کنید. یا اینکه ادامه مطلب رو بخونید تا با چگونگی انجامش آشنا شید.
 
-####راست‌چین کردن material-ui
+#### راست‌چین کردن material-ui
 
 مرحله ۱) ابتدا از فایل `public/index.html` را باز کنید و به `body` و `html` پروپرتی `direction` رو با مقدار rtl بدید.
 
@@ -97,7 +97,7 @@ return (
 
 [مشاهده تغییرات کد در gitHub](https://github.com/moshtaghi/material-dashboard-react-rtl/commit/6930a89165f674371867c86cef225348ef97b2b8#diff-db6c09be1f26362d8e8eab0a45371845)
 
-####اصلاح استایل‌های مربوط به داشبورد
+#### اصلاح استایل‌های مربوط به داشبورد
 
 می‌شه گفت بطور کامل مراحل راست‌چین کردن کتابخونه material-ui رو انجام دادیم، اما خروجی هنوز طوری که باید باشه نیست. دلیل این موضوع انگولک‌هایی هست که در پروژه‌ی داشبورد انجام دادن و استایل‌های کاستوم بهش اعمال کردن.
 
@@ -121,7 +121,7 @@ const appStyle = theme => ({
 
 [مشاهده تغییرات کد در gitHub](https://github.com/moshtaghi/material-dashboard-react-rtl/commit/4768d5166512877eb26c90c207ef1fc264086bf5#diff-3ee9c081bfd380b7245c611eca1a7c13)
 
-####افزودن فونت وزیر
+#### افزودن فونت وزیر
 
 برای اینکار از cdn استفاده می‌کنیم. پس ابتدا فایل `public/index.html` را باز کنید و کد زیر رو در اون قرار بدید.
 
@@ -157,7 +157,7 @@ const defaultFont = {
 
 [مشاهده تغییرات کد در gitHub](https://github.com/moshtaghi/material-dashboard-react-rtl/commit/9085825b2b60f383d1e4173ca254ff77d4aaf58b#diff-3c43498b7342c72ed30bfcc6d9b33fa8)
 
-####همه چیز که نباید راست‌چین باشه!
+#### همه چیز که نباید راست‌چین باشه!
 
 یک ریزه‌کاری هم مونده، و اون اینکه direction چارت‌ها رو به همون شکل چپ‌چین نمایش بدیم تا بهتر دیده شن. پس فایل `src/assets/jss/material-dashboard-react/chartCardStyle.jsx` رو باز می‌کنیم و ...
 
